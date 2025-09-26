@@ -1,0 +1,92 @@
+/* Color Theme Swatches in Hex */
+.color1 {
+    color: #E8B1C6;
+}
+
+.color2 {
+    color: #252F3F;
+}
+
+.color3 {
+    color: #A2ACC0;
+}
+
+.color4 {
+    color: #6C8B91;
+}
+
+.color5 {
+    color: #A4ADAB;
+}
+
+
+:root {
+    --color1: #E8B1C6;
+    --color2: #252F3F;
+    --color3: #A2ACC0;
+    --color4: #6C8B91;
+    --color5: #A4ADAB;
+
+}
+
+body {
+    background-color: var(--color3);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--color4);
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--color2);
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: var(--color2);
+}
+
+/* Active (current page) link */
+nav a.active {
+    background-color: var(--color1);
+    /* a green highlight */
+    font-weight: bold;
+    /* make it stand out */
+}
